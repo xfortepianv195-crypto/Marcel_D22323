@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta Gracza</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            width: 700px;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        .question {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .question label {
+            width: 250px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .question input[type="text"], .question input[type="email"], .question textarea, .question select {
+            width: 100%;
+            padding: 10px;
+            margin-left: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .question textarea {
+            resize: vertical;
+        }
+        .question .social-icons {
+            display: flex;
+            margin-left: 10px;
+        }
+        .question .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+        }
+        .checkbox-group {
+            display: flex;
+            margin-left: 10px;
+        }
+        .checkbox-group label {
+            font-size: 16px;
+            margin-right: 20px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .buttons input {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .buttons input[type="reset"] {
+            background-color: #f44336;
+        }
+        .buttons input:hover {
+            background-color: #45a049;
+        }
+        .reset-button:hover {
+            background-color: #e7342d;
+        }
+        .form-footer {
+            font-size: 12px;
+            color: #888;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Ankieta Gracza</h1>
+
+        <form>
+            <div class="question">
+                <label for="name">1. Podaj imię i nazwisko:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="question">
+                <label for="email">2. Podaj swój adres e-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="question">
+                <label for="play-time">3. Ile spędzasz godzin przy grach komputerowych dziennie:</label>
+                <select id="play-time" name="play-time">
+                    <option value="<2">Mniej niż 2h</option>
+                    <option value="2-5">2-5h</option>
+                    <option value=">6">Więcej niż 6h</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="spend">4. Ile wydajesz na gry komputerowe rocznie:</label>
+                <select id="spend" name="spend">
+                    <option value="<100">Mniej niż 100 zł</option>
+                    <option value="100-500">100 zł - 500 zł</option>
+                    <option value=">600">Więcej niż 600 zł</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>5. Czy często denerwujesz się przy grze komputerowej?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="play-computer-games" value="yes"> Tak</label>
+                    <label><input type="checkbox" name="play-computer-games" value="no"> Nie</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label>6. Czy interesujesz się e-sportem?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="esport" value="yes"> Tak</label>
+                    <label><input type="checkbox" name="esport" value="no"> Nie</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="change-school">7. Co byś zmienił w swojej szkole?</label>
+                <textarea id="change-school" name="change-school" rows="4"></textarea>
+            </div>
+
+            <div class="question">
+                <label for="favorite-game">8. Jaka jest twoja ulubiona gra?</label>
+                <input type="text" id="favorite-game" name="favorite-game">
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Zapisz">
+                <input type="reset" value="Resetuj" class="reset-button">
+            </div>
+
+            <div class="form-footer">
+                <div class="social-icons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/TikTok_Logo_2023.svg/2048px-TikTok_Logo_2023.svg.png" alt="TikTok">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/YouTube_Logo_2015.png/512px-YouTube_Logo_2015.png" alt="YouTube">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Instagram_logo_2022.svg" alt="Instagram">
+                </div>
+            </div>
+        </form>
+    </div>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta Gracza</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            width: 700px;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            position: relative;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        .question {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .question label {
+            width: 250px;
+            font-size: 16px;
+            font-weight:
+
+</body>
+</html>
+   
